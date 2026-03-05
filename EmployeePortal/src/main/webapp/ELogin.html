@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login Page</title>
+
+<style>
+    body {
+        background-color: lightyellow;
+        font-family: Arial, sans-serif;
+    }
+
+    .login-box {
+        width: 300px;
+        margin: 100px auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px gray;
+    }
+
+    
+    h1 {
+        text-align: center;
+        color: darkred;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        margin: 5px 0 15px 0;
+        border-radius: 5px;
+        border: 1px solid gray;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 8px;
+        background-color: darkred;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: red;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="login-box">
+    <h1>LOGIN APP</h1>
+     
+    
+    <form action="ELogin" method="post">
+        <label>Username</label>
+        <input type="text" name="username">
+
+        <label>Password</label>
+        <input type="password" name="password">
+
+        <input type="submit" value="Login">
+    </form>
+    <br>
+    <br>
+    <a href="Esignup.html"><button>Signup Here</button></a>
+</div>
+
+</body>
+</html>

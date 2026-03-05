@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Signup</title>
+
+<style>
+    body {
+        background: linear-gradient(to right, #ffecd2, #fcb69f);
+        font-family: Arial, sans-serif;
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+
+    .signup-box {
+        width: 500px;
+        margin: auto;
+        background-color: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0px 0px 15px gray;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    td {
+        padding: 8px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    select {
+        width: 95%;
+        padding: 6px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+    }
+
+    input[type="radio"] {
+        margin-left: 10px;
+    }
+
+    input[type="submit"] {
+        background-color: #ff6600;
+        color: white;
+        padding: 8px 20px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #e65c00;
+    }
+
+    label {
+        font-weight: bold;
+    }
+</style>
+
+</head>
+
+<body>
+
+<h1>Signup Page</h1>
+
+<div class="signup-box">
+<form action="signup" method="post">
+
+<table>
+
+<tr>
+<td><label>Id</label></td>
+<td><input type="text" name="id"></td>
+</tr>
+
+<tr>
+<td><label>First Name</label></td>
+<td><input type="text" name="fname"></td>
+</tr>
+
+<tr>
+<td><label>Last Name</label></td>
+<td><input type="text" name="lname"></td>
+</tr>
+
+<tr>
+<td><label>Username</label></td>
+<td><input type="text" name="uname"></td>
+</tr>
+
+<tr>
+<td><label>Password</label></td>
+<td><input type="password" name="pass"></td>
+</tr>
+
+<tr>
+<td><label>Phone Number</label></td>
+<td><input type="text" name="phone"></td>
+</tr>
+
+<tr>
+<td><label>Age</label></td>
+<td><input type="text" name="age"></td>
+</tr>
+
+<tr>
+<td><label>City</label></td>
+<td>
+<select name="city">
+<option>select</option>
+<option value="Hyd">Hyderabad</option>
+<option value="Bang">Bangalore</option>
+<option value="Vij">Vijayawada</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td><label>Country</label></td>
+<td>
+<select name="country">
+<option value="india">India</option>
+<option value="usa">USA</option>
+<option value="UK">UK</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td><label>Gender</label></td>
+<td>
+<input type="radio" name="Gender" value="M"> Male
+<input type="radio" name="Gender" value="F"> Female
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td><input type="submit" value="Sign Up"></td>
+</tr>
+
+</table>
+
+</form>
+</div>
+
+</body>
+</html>
